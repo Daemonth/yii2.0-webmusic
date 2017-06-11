@@ -1,0 +1,1083 @@
+.g-bd{
+    width: 980px;
+    min-height: 700px;
+    _height: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+}
+.g-wrap {
+    padding: 40px;
+}
+.m-proifo {
+    margin-bottom: 43px;
+}
+.m-proifo dt {
+    float: left;
+    width: 188px;
+    margin-right: 10px;
+}
+.f-pr {
+    position: relative;
+    zoom: 1;
+}
+.m-proifo dt img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+}
+.m-proifo dt .btm {
+    display: none;
+    background: #8e8e8e;
+    opacity: 0.8;
+    filter: Alpha(opacity=80);
+}
+.m-proifo dt .upload {
+    top: 0;
+    left: 0;
+}
+.m-proifo dt .btm, .m-proifo dt .upload {
+    position: absolute;
+    left: 4px;
+    bottom: 3px;
+    display: block;
+    width: 180px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.m-proifo dd {
+    float: right;
+    width: 660px;
+}
+dd {
+    display: block;
+    -webkit-margin-start: 40px;
+}
+.m-proifo .name {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.m-proifo .name .edit {
+    float: right;
+    margin-top: 4px;
+}
+.u-btn2-1 {
+    color: #333;
+    background-position: right -100px;
+}
+.u-btn2, .u-btn2:hover {
+    text-decoration: none;
+}
+.u-btn2 {
+    padding: 0 5px 0 0;
+    white-space: nowrap;
+}
+.u-btn2, .u-btn2 i {
+    display: inline-block;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+}
+.u-btn2, .u-btn2 i, .u-btn2 .icn, .u-btni, .u-btni i, .u-tag, .u-tag i, .u-btni-addply .ply {
+    background: url(../../../style/web2/img/button2.png?561588093a5deff6e67e21839ca268bb) no-repeat 0 9999px;
+}
+.u-btn2-1 i {
+    color: #333;
+    background-position: 0 -59px;
+}
+.u-btn2 i {
+    padding: 0 15px 0 20px;
+    pointer-events: none;
+}
+.m-proifo .name .rect {
+    float: right;
+    margin-top: 4px;
+}
+.m-proifo .name .wrap {
+    padding-bottom: 3px;
+}
+.f-fl {
+    float: left;
+}
+
+.m-proifo .name .tit {
+    float: left;
+    margin-top: 3px;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.s-fc0, a.s-fc0:hover {
+    color: #000;
+}
+.f-thide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.m-proifo .name .lev {
+    float: left;
+    margin: 8px 0 0 10px;
+}
+
+.u-lev {
+    display: inline-block;
+    height: 19px;
+    overflow: hidden;
+    padding-left: 29px;
+    line-height: 21px;
+    color: #e03a24;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.u-icn2-lev {
+    background-position: -135px -190px;
+}
+
+.u-icn, .u-icn2, .u-icn3 {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+.u-icn2 {
+    background: url(../../../style/web2/img/icon2.png?2ae512ad2be7d6efad82fb0ec8101174) no-repeat 0 9999px;
+}
+
+.u-lev i {
+    float: right;
+}
+
+.u-icn2-levr {
+    width: 9px;
+    height: 19px;
+    background-position: -191px -190px;
+}
+
+.u-icn, .u-icn2, .u-icn3 {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.u-icn2 {
+    background: url(../../../style/web2/img/icon2.png?2ae512ad2be7d6efad82fb0ec8101174) no-repeat 0 9999px;
+}
+
+
+em, i {
+    font-style: normal;
+    text-align: left;
+    font-size: inherit;
+}
+.m-proifo .name .u-icn-01 {
+    margin-top: 9px;
+}
+
+.m-proifo .name .icn {
+    float: left;
+    margin: 9px 0 0 8px;
+}
+
+.m-proifo .name .u-icn {
+    margin-right: 5px;
+}
+
+.u-icn-01 {
+    width: 20px;
+    height: 20px;
+    background-position: -41px -57px;
+}
+.u-icn, .u-icn2, .u-icn3 {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.f-cb:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.m-proifo .data {
+    height: 41px;
+    margin-bottom: 15px;
+}
+
+.s-fc3, a.s-fc3:hover {
+    color: #666;
+}
+
+.m-proifo .data .fst {
+    padding-left: 0;
+    border-left: none;
+}
+
+
+.m-proifo .data li {
+    float: left;
+    padding: 0 40px 0 20px;
+    border-left: 1px solid #ddd;
+}
+
+li, s {
+    list-style: none;
+}
+
+.m-proifo .data a {
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    color: #666;
+}
+
+.m-proifo .data strong {
+    display: block;
+    margin-top: -4px;
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.m-proifo .data span {
+    display: block;
+    text-indent: 2px;
+    cursor: pointer;
+}
+m-proifo .data li {
+    float: left;
+    padding: 0 40px 0 20px;
+    border-left: 1px solid #ddd;
+}
+
+li, s {
+    list-style: none;
+}
+
+.m-proifo .data a {
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    color: #666;
+}
+
+.m-proifo .data strong {
+    display: block;
+    margin-top: -4px;
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.m-proifo .data span {
+    display: block;
+    text-indent: 2px;
+    cursor: pointer;
+}
+
+.m-proifo .data li {
+    float: left;
+    padding: 0 40px 0 20px;
+    border-left: 1px solid #ddd;
+}
+
+.m-proifo .data a {
+    display: inline-block;
+    position: relative;
+    zoom: 1;
+    color: #666;
+}
+
+.m-proifo .data strong {
+    display: block;
+    margin-top: -4px;
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.m-proifo .data span {
+    display: block;
+    text-indent: 2px;
+    cursor: pointer;
+}
+.m-proifo .data .u-icn-68 {
+    position: absolute;
+    right: -14px;
+    top: -3px;
+}
+.u-icn-68 {
+    width: 12px;
+    height: 12px;
+    background: url(../../../style/web2/img/ie6/dot2.png?64a5a69778dc9acb3a6016872f3d6cd0) no-repeat;
+}
+.m-proifo .inf {
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+
+.s-fc3, a.s-fc3:hover {
+    color: #666;
+}
+
+.m-proifo .inf {
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+.m-proifo .inf .sep {
+    margin-left: 20px;
+}
+.m-proifo .inf .tit {
+    float: left;
+}
+.u-logo-s {
+    margin-left: -8px;
+}
+
+.u-logo-s li {
+    margin-left: 8px;
+    height: 22px;
+}
+
+.u-logo li {
+    float: left;
+}
+.u-slg-sn-gray {
+    background-position: 0 -25px;
+}
+.u-slg {
+    width: 20px;
+    height: 20px;
+}
+.u-title-1 {
+    height: 33px;
+}
+.u-title-1 h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.f-ff2 {
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+.m-rctten {
+    margin-bottom: 36px;
+    border: 1px solid #e2e2e2;
+    border-width: 0 0 1px 1px;
+}
+.m-record-title {
+    position: relative;
+    z-index: 2;
+    zoom: 1;
+}
+.u-title-1 h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+.m-record-title h4 {
+    float: left;
+    display: inline;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #666;
+}
+.n-iconpoint {
+    position: relative;
+    margin-left: 10px;
+    left: -1px;
+    top: 8px;
+    line-height: 18px;
+    z-index: 2;
+}
+.u-icn2-5 {
+    width: 18px;
+    height: 18px;
+    background-position: 0 -50px;
+}
+.u-icn, .u-icn2, .u-icn3 {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.n-iconpoint div.tip {
+    position: absolute;
+    left: -33px;
+    top: 30px;
+    display: none;
+    width: 295px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 19px 7px 19px;
+    z-index: 2;
+    color: #666;
+}
+.n-iconpoint div.tip i.t {
+    position: absolute;
+    width: 327px;
+    height: 16px;
+    left: 0;
+    top: -16px;
+}
+.n-iconpoint div.tip i.b {
+    position: absolute;
+    width: 327px;
+    height: 12px;
+    left: 0;
+    bottom: -12px;
+}
+.m-record-title .nav {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 5px;
+}
+.m-record-title .nav span {
+    line-height: 26px;
+    color: #666;
+    cursor: pointer;
+}
+.m-record-title .nav span, .m-record-title .nav i {
+    float: right;
+    margin-left: 8px;
+}
+.m-record-title .nav span.z-sel {
+    color: #333;
+    font-weight: 700;
+}
+.m-record-title .nav span {
+    line-height: 26px;
+    color: #666;
+    cursor: pointer;
+}
+.m-record-title .nav span, .m-record-title .nav i {
+    float: right;
+    margin-left: 8px;
+}
+.f-cb:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.m-record-title {
+    position: relative;
+    z-index: 2;
+    zoom: 1;
+}
+.m-record-title {
+    position: relative;
+    z-index: 2;
+    zoom: 1;
+}
+.u-title {
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+.m-record .more {
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+}
+
+.m-record .more a {
+    color: #666;
+}
+.m-record ul {
+    border: 1px solid #e2e2e2;
+    border-top: none;
+}
+.m-record li {
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}
+.m-record li .hd {
+    float: left;
+    width: 72px;
+    height: 38px;
+    overflow: hidden;
+}
+.m-record .ply, .m-record span.icn {
+    background: url(../../static/img/table.png) no-repeat 0 9999px;
+}
+.m-record .ply {
+    float: right;
+    display: inline;
+    margin-top: 10px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background-position: 0 -103px;
+}
+.m-record li .hd .num {
+    float: left;
+    display: inline;
+    padding-left: 5px;
+    padding-right: 8px;
+    width: 37px;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #666;
+}
+.m-record li .song {
+    float: left;
+    position: relative;
+    z-index: 1;
+    zoom: 1;
+    padding-left: 10px;
+    width: 480px;
+    height: 38px;
+    overflow: hidden;
+}
+.m-record li .song .tt {
+    float: left;
+    width: 100%;
+}
+.m-record li .song .tt .txt {
+    position: relative;
+    display: inline-block;
+    max-width: 99%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.s-fc8, a.s-fc8:hover {
+    color: #aeaeae;
+}
+.m-record li .song .tt .ar em {
+    margin: 0 5px;
+}
+.main-center100 {
+    width: 100%;
+}
+.user-common {
+    width: 100%;
+    background: url(/v/dist-prod/images/be6fcf2b96e000ab9e2e86f84d5b0753.png) repeat-x #fff;
+}
+.user-sound .user-top-w {
+    width: 100%;
+}
+.user-sound .user-top-w .intro-w {
+    position: relative;
+    background: #ebebeb;
+    width: 100%;
+    height: 360px;
+}
+.user-common .user-top-w .intro-w .intro {
+    
+    width: 50%;
+    height: 80px;
+    padding-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 24%;
+}
+.user-common .user-top-w .intro-w .intro .avatar {
+    float: right;
+    margin-right: 100px;
+}
+.user-common .user-top-w .intro-w .intro .avatar p {
+    font-size: 20px;
+    line-height: 20px;
+    color: #333;
+    margin: 12px -50px 10px;
+}
+.user-common .user-top-w .intro-w .intro .avatar span {
+    display: inline-block;
+    color: #666;
+    font-size: 16px;
+    line-height: 16px;
+    width: 625px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.user-sound .user-top-w .intro-w .num {
+    position: absolute;
+    left: 0;
+    top: 170px;
+    font-size: 24px;
+    color: #333;
+    background: #ebebeb;
+    margin-left: 24%;
+}
+.user-sound .user-top-w .sound-list {
+    width: 1100px;
+    margin: 40px auto 20px;
+    background: #fff;
+    border-radius: 4px;
+    padding-bottom: 15px;
+}
+.user-sound .user-top-w .sound-list .sound {
+    padding: 15px 0;
+}
+.user-sound .user-top-w .sound-list .sound li {
+    height: 65px;
+    line-height: 65px;
+    font-size: 16px;
+    color: #333;
+    padding: 0 30px;
+    cursor: pointer;
+}
+.user-sound .user-top-w .sound-list .sound li .index {
+    float: left;
+    margin-right: 17px;
+}
+.user-sound .user-top-w .sound-list .sound li a {
+    color: #333;
+}
+.user-sound .user-top-w .sound-list .sound li img {
+    float: left;
+    width: 37px;
+    height: 37px;
+    border-radius: 2px;
+    margin: 14px 17px 0 0;
+}
+.user-sound .user-top-w .sound-list .sound li p {
+    float: left;
+    max-width: 369px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.user-sound .user-top-w .sound-list .sound li .like-count {
+    float: right;
+    color: #666;
+    width: 130px;
+    font-size: 14px;
+    text-align: right;
+    overflow: hidden;
+}
+.user-sound .user-top-w .sound-list .sound li .like-count i.on {
+    background: url(../../static/img/eb425b40a9e01160db4846180936a0f8.png) no-repeat;
+}
+.user-sound .user-top-w .sound-list .sound li .like-count i {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    margin: -3px 7px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    background: url(/v/dist-prod/images/857b74590f86c14c109041787e95a47c.png) no-repeat;
+}
+.user-sound .user-top-w .sound-list .sound li .channel {
+    float: right;
+    width: 190px;
+    text-align: left;
+    color: #6ed56c;
+    margin-right: 62px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.user-sound .user-top-w .sound-list .sound li .delete-sound, .user-sound .user-top-w .sound-list .sound li .play {
+    display: none;
+    float: left;
+    width: 32px;
+    height: 32px;
+    background: url(/v/dist-prod/images/10ec247f96e5f8f9a00e6c26bfb0c03c.png) no-repeat;
+    margin: 15px 0 0 30px;
+    cursor: pointer;
+}
+.user-edit {
+    width: 920px;
+    margin: 12px auto;
+    background: #fff;
+    border-radius: 4px;
+    padding: 50px 40px;
+}
+.user-edit h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.user-edit .common-line p {
+    float: left;
+    width: 70px;
+    font-size: 16px;
+    color: #666;
+    line-height: 36px;
+    margin-right: 27px;
+    text-align: center;
+}
+.user-edit .common-line .upload-area {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    background: #f4f4f4;
+    border: 1px solid #e8e8e8;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+.user-edit .common-line .upload-area img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.user-edit .common-line .upload-area .cover-btn .webuploader-element-invisible:hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../static/img/b94efbefa50194e7f1a32df7b88226ac.png) center center no-repeat rgba(0,0,0,.4);
+}
+.user-edit .common-line .upload-area .upload-status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+    width: 44px;
+    height: 44px;
+    background: url(../img/7.png) center center no-repeat;
+} 
+.user-edit .common-line .upload-area .cover-btn .webuploader-pick {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+.user-edit .common-line .upload-area .cover-btn .webuploader-element-invisible {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+.user-edit .common-line.spe {
+    margin-bottom: 40px;
+}
+.user-edit .common-line p {
+    float: left;
+    width: 70px;
+    font-size: 16px;
+    color: #666;
+    line-height: 36px;
+    margin-right: 27px;
+    text-align: center;
+}
+.user-edit .common-line .common-input {
+    width: 405px;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+    font-size: 14px;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    padding-left: 15px;
+}
+.user-edit  span {
+    position: absolute;
+    left: 100px;
+    bottom: -19px;
+    color: #6ed56c;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 6px;
+}
+.user-edit .common-line .fl {
+    float: left;
+}
+.user-edit .common-line .sex-list label {
+    font-size: 14px;
+    color: #666;
+    line-height: 36px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.user-edit .common-line .sex-list label input[type=radio]:checked+.status-radio {
+    background: url(/v/dist-prod/images/b87cd09796e85aa4efb83e9bf9196e00.png) 0 -27px no-repeat;
+}
+.user-edit .common-line .sex-list label input {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+}
+.user-edit .common-line .sex-list label .status-radio {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../../static/img/b87cd09796e85aa4efb83e9bf9196e00.png) no-repeat;
+    vertical-align: middle;
+    margin: -2px 5px 0 0;
+    cursor: pointer;
+}
+.user-edit .common-line {
+    position: relative;
+    margin: 30px 0;
+}
+.user-edit .common-line .select {
+    width: 422px;
+}
+.user-edit .common-line .text {
+    width: 500px;
+    height: 170px;
+    resize: none;
+}
+.user-edit .modify-btn {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    background: #6ed56c;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 96px;
+    border: 1px solid #6ed56c;
+   
+}
+.star-container-wrap .star-container .my-echo-wp, .star-container-wrap .star-container .my-like {
+    padding-bottom: 20px;
+}
+.star-container-wrap .title {
+    margin: 90px 0 28px;
+}
+.star-container-wrap .title h2 {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 300;
+}
+.star-container-wrap .title .more {
+    float: right;
+    color: #6ED56C;
+    font-size: 16px;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 {
+    width: 100%;
+    height: 205px;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li {
+    float: left;
+    position: relative;
+    width: 205px;
+    height: 205px;
+    margin-right: 18px;
+    overflow: hidden;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li .rankingGreen, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li .rankingGreen {
+    background-color: #6ED56C;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li .ranking, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li .ranking {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: rgba(0,0,0,.14);
+    color: #fff;
+    border-bottom-right-radius: 10px;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li .pic, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li .pic {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li .pic-mask, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li .pic-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li .name, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li .name {
+    position: absolute;
+    width: 165px;
+    height: 40px;
+    line-height: 20px;
+    top: 23px;
+    left: 20px;
+    color: #fff;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: none;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li .like-count, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li .like-count {
+    display: none;
+    position: absolute;
+    left: 20px;
+    bottom: 18px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li .sound-hot-play-btn, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li .sound-hot-play-btn {
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 18px;
+    bottom: 23px;
+    background: url(/v/dist-prod/images/fbc5ccfdd709a1ebdb01bc49c742db4e.png) left center no-repeat;
+    background-size: contain;
+}
+.star-container-wrap .star-container .cont-echo-section {
+    border: 1px solid #E8E8E8;
+    padding: 10px 0;
+    margin-top: 35px;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list {
+    padding-left: 30px;
+    background-color: #fff;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .ranking {
+    float: left;
+    width: 20px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #999;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .playing {
+    display: none;
+    float: left;
+    width: 20px;
+    height: 14px;
+    margin-top: 22px;
+    background: url(/v/dist-prod/images/b4e1234ac219c60b65102bea1df7e6cf.png) center center no-repeat;
+    background-size: contain;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .hot-list-pic {
+    float: left;
+    display: block;
+    width: 37px;
+    height: 37px;
+    margin: 12px 20px;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .name-wp {
+    float: left;
+    width: 600px;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .name-wp .name {
+    display: inline-block;
+    max-width: 450px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .name-wp .play-btn {
+    background: url(/v/dist-prod/images/b85837c1f787d15965160f8c282cfed0.png) center center no-repeat;
+    background-size: cover;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .name-wp .hot-list-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .channel {
+    float: left;
+    width: 160px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 14px;
+    color: #6ED56C;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .like {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 30px;
+    color: #666;
+    font-size: 14px;
+}
+.star-container-wrap .star-container .cont-echo-section .hot-list .like:before {
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 12px;
+    margin-right: 8px;
+    background: url(/v/dist-prod/images/1f8f2abed68053f826c38a24916121b3.png) center center no-repeat;
+    background-size: cover;
+    opacity: .4;
+}
+.star-container-wrap .star-container .my-like {
+    padding-bottom: 20px;
+}
+.star-container-wrap .star-container .my-like .title {
+    margin-top: 60px;
+}
+.star-container-wrap .title {
+    margin: 90px 0 28px;
+}
+.star-container-wrap .title h2 {
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 300;
+}
+.star-container-wrap .title .more {
+    float: right;
+    color: #6ED56C;
+    font-size: 16px;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 {
+    width: 100%;
+    height: 205px;
+}
+.star-container-wrap .star-container .my-echo-wp .cont-section-1 .top1-5 li, .star-container-wrap .star-container .my-like .cont-section-1 .top1-5 li {
+    float: left;
+    position: relative;
+    width: 205px;
+    height: 205px;
+    margin-right: 18px;
+    overflow: hidden;
+}
+
+.feed-one i.type1, .user-index .feed-one i.type9 {
+    background: url(../../static/img/19d3cebbdadecd9e5b4b1b08efe668ff.png) -50px 0 no-repeat;
+}
+.feed-one i.type0, .user-index .feed-one i.type11, .user-index .feed-one i.type14, .user-index .feed-one i.type8 {
+    background: url(../../static/img/19d3cebbdadecd9e5b4b1b08efe668ff.png) no-repeat;
+}

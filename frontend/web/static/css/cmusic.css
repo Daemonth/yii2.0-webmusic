@@ -1,0 +1,937 @@
+
+
+.main-center {
+    margin: 0 auto;
+    width: 1000px;
+    min-height: 200px;
+}
+.chn-info {
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.chn-info .single-header {
+    display: block;
+    background: #f4f4f4;
+    box-shadow: 0 -1px 4px 0 rgba(0,0,0,.06);
+}
+.chn-info .single-header .singleheader-back {
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin: 28px 40px;
+    font-size: 18px;
+    color: #999;
+}
+a {
+    cursor: pointer;
+}
+.chn-info .single-header .singleheader-back .act-back {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(/v/dist-prod/images/15df536ea53c26483fa9810992617687.png) no-repeat;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+.chn-info .single-header .singleheader-share {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin: 25px 40px;
+    font-size: 18px;
+    color: #999;
+}
+.chn-info .single-header .singleheader-share {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin: 25px 40px;
+    font-size: 18px;
+    color: #999;
+}
+.chn-info .single-header .singleheader-share .to-weixin {
+    background: url(/v/dist-prod/images/84c278d6085afdc4b67ae8d2e371a0ec.png) -76px 0 no-repeat;
+}
+.chn-info .single-header .singleheader-share a {
+    display: inline-block;
+    width: 31px!important;
+    height: 30px!important;
+    vertical-align: middle;
+    cursor: pointer;
+    float: none;
+    font-size: inherit;
+    padding: 0;
+    line-height: inherit;
+    margin: 0 0 0 8px;
+}
+
+.chn-info .single-header .singleheader-share .to-weibo {
+    background: url(/v/dist-prod/images/84c278d6085afdc4b67ae8d2e371a0ec.png) -114px 0 no-repeat;
+}
+
+.chn-info .chan-wonderful {
+    padding: 53px 23px 60px 26px;
+}
+.chn-info .chan-wonderful .chan-wonderful_top {
+    height: 28px;
+}
+.chn-info .chan-wonderful .chan-wonderful_top h4 {
+    float: left;
+    font-size: 28px;
+    color: #333;
+    line-height: 28px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-size: 100%;
+}
+.chn-info .chan-wonderful .chan-wonderful_top span {
+    float: right;
+    color: #6B6B6B;
+    font-size: 14px;
+    margin-left: 20px;
+    padding-left: 25px;
+}
+.chn-info .chan-wonderful .chan-wonderful_top span {
+    float: right;
+    color: #6B6B6B;
+    font-size: 14px;
+    margin-left: 20px;
+    padding-left: 25px;
+}
+.chn-info .chan-wonderful .chan-wonderful_top span {
+    float: right;
+    color: #6B6B6B;
+    font-size: 14px;
+    margin-left: 20px;
+    padding-left: 25px;
+}
+.chn-info .chan-wonderful .chan-wonderful_footer {
+    margin-top: 30px;
+}
+.chn-info .chan-wonderful .chan-wonderful_footer .chanbac {
+    float: left;
+    margin-right: 16px;
+    width: 256px;
+    height: 136px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chn-info .chan-wonderful .chan-wonderful_footer h4 {
+    font-size: 16px;
+    color: #9B9B9B;
+    margin-bottom: 2px;
+}
+.chn-info .chan-wonderful .chan-wonderful_footer p {
+    font-size: 12px;
+    color: #666;
+    line-height: 21px;
+    margin-bottom: 15px;
+    height: 60px;
+    overflow: hidden;
+}
+.chn-info .chan-wonderful .chan-wonderful_footer a.chan-hear {
+    width: 93px;
+    height: 30px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50px;
+    float: left;
+    text-align: center;
+    display: block;
+    color: #666;
+}
+.chn-info .chan-wonderful .chan-wonderful_footer .chan-hear i {
+    display: inline-block;
+    width: 17px;
+    height: 9px;
+    background: url(/v/dist-prod/images/87a63fd0393b1098b47561f989b602ea.png) no-repeat;
+}
+.chn-info .chan-wonderful .chan-wonderful_footer span {
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.chn-info .chan-wonderful .chan-wonderful_footer a.chan-follow {
+    width: 80px;
+    height: 30px;
+    border: 1px solid #D9D9D9;
+    float: left;
+    margin-left: 25px;
+    border-radius: 50px;
+    text-align: center;
+    display: block;
+    color: #666;
+    font-size: 12px;
+    line-height: 30px;
+}
+.chn-info .chan-hot_new {
+    height: 35px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.video-js button, :link, :visited, ins {
+    text-decoration: none;
+}
+.chn-info .chan-exp .chan-exppopular {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    overflow: hidden;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list {
+    width: 100%;
+    height: 940px;
+    overflow: hidden;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box {
+    float: left;
+    width: 160px;
+    height: 274px;
+    background: #f4f4f4;
+    margin: 25px 0 0 33px;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .pic {
+    display: block;
+    position: relative;
+    height: 160px;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .pic img {
+    width: 160px;
+    height: 160px;
+}
+img {
+    max-width: 100%;
+}
+fieldset, img {
+    border: 0;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .pic .duration {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #fff;
+    margin-left: 8px;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .pic .duration #playbtn {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../../static/img/b1.png) no-repeat;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box #song-name {
+    display: block;
+    margin: 12px 10px 0;
+    font-size: 14px;
+    line-height: 18px;
+    height: 36px;
+    color: #4a4a4a;
+    overflow: hidden;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box h4 {
+    margin: 15px 10px 0;
+    font-size: 12px;
+    line-height: 12px;
+    height: 16px;
+    color: #9b9b9b;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box h4 a {
+    color: #6ed56c;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status {
+    display: block;
+    margin: 10px 5px 0;
+    height: auto;
+    line-height: 14px;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li {
+    float: left;
+    display: inline-block;
+    width: 50px;
+    color: #6b6b6b;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li .share {
+    background: url(/v/dist-prod/images/ae488640107567b16640846a2375beb3.png) 0 -23px no-repeat;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li {
+    float: left;
+    display: inline-block;
+    width: 50px;
+    color: #6b6b6b;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li {
+    float: left;
+    display: inline-block;
+    width: 50px;
+    color: #6b6b6b;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li .comment, .chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li .like, .chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li .share {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    vertical-align: top;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li .comment {
+    background: url(/v/dist-prod/images/ae488640107567b16640846a2375beb3.png) -34px -23px no-repeat;
+}
+.chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li .comment, .chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li .like, .chn-info .chan-exp .chan-exppopular .chan-exppopular-list .chan-exppopular-box .status li .share {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    vertical-align: top;
+}
+.chn-info .chan-hot_new .current {
+    border-bottom: 4px solid #6ED56C;
+}
+.chn-info .chan-hot_new span {
+    margin-left: 40px;
+    color: #999;
+    width: 42px;
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: Regular;
+}
+.sound.sound-info {
+    margin-top: 15px;
+}
+.sound.sound-info .main {
+    background: #fff;
+}
+.sound.sound-info .main nav {
+    background: #f4f4f4;
+    box-shadow: 0 -1px 4px 0 rgba(0,0,0,.06);
+    height: 80px;
+    line-height: 80px;
+}
+.sound.sound-info .main nav .back {
+    float: left;
+    font-size: 18px;
+    color: #999;
+    margin-left: 40px;
+}
+.sound.sound-info .main nav .back:before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(../../static/img/8.png) no-repeat;
+    vertical-align: middle;
+    margin: -2px 16px 0 0;
+}
+.sound.sound-info .main nav .share {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin: 25px 40px;
+    font-size: 18px;
+    color: #999;
+}
+.sound.sound-info .main nav .share {
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin: 25px 40px;
+    font-size: 18px;
+    color: #999;
+}
+.sound.sound-info .main nav .share .to-weixin {
+    background: url(/v/dist-prod/images/84c278d6085afdc4b67ae8d2e371a0ec.png) -76px 0 no-repeat;
+}
+.sound.sound-info .main nav .share .to-weibo, .sound.sound-info .main nav .share .to-weixin {
+    display: inline-block;
+    width: 31px;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.sound.sound-info .main nav .share .to-weibo {
+    background: url(/v/dist-prod/images/84c278d6085afdc4b67ae8d2e371a0ec.png) -114px 0 no-repeat;
+}
+.sound.sound-info .main nav .share .to-weibo, .sound.sound-info .main nav .share .to-weixin {
+    display: inline-block;
+    width: 31px;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.clearfix, main {
+    display: block;
+}
+.sound.sound-info .main .sound-title .title {
+    display: inline-block;
+    line-height: 28px;
+    color: #666;
+    font-size: 22px;
+    padding: 24px 40px 0;
+}
+.sound.sound-info .main .sound-title .sound-status h5 a, .sound.sound-info .main .sound-title .sound-status h5 span {
+    color: #8ed72b;
+    padding: 0 4px 0 8px;
+}
+.sound.sound-info .main .sound-title .sound-status h5 {
+    text-align: right;
+    font-size: 12px;
+    height: 14px;
+    line-height: 14px;
+    color: #aaa;
+}
+.sound.sound-info .main .sound-title .sound-status h5 a, .sound.sound-info .main .sound-title .sound-status h5 span {
+    color: #8ed72b;
+    padding: 0 4px 0 8px;
+}
+
+.sound.sound-info .main .sound-bullets-wp {
+    position: relative;
+    height: 420px;
+}
+.sound.sound-info .main .sound-title .sound-status {
+    float: right;
+    margin: 24px 40px 16px 0;
+}
+.sound.sound-info .main .sound-title .sound-status .status {
+    float: right;
+    margin-top: 8px;
+}
+.sound.sound-info .main .sound-title .sound-status .status .td {
+    display: inline-block;
+    color: #6b6b6b;
+    line-height: 16px;
+    font-size: 14px;
+    padding-left: 15px;
+    vertical-align: top;
+}
+.sound.sound-info .main .sound-title .sound-status .status .td.share:before {
+    background: url(/v/dist-prod/images/ae488640107567b16640846a2375beb3.png) 0 2px no-repeat;
+}
+.sound.sound-info .main .sound-title .sound-status .status .td.comment:before, .sound.sound-info .main .sound-title .sound-status .status .td.like:before, .sound.sound-info .main .sound-title .sound-status .status .td.share:before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+    margin-right: 4px;
+}
+.sound.sound-info .main .sound-title .sound-status .status .td {
+    display: inline-block;
+    color: #6b6b6b;
+    line-height: 16px;
+    font-size: 14px;
+    padding-left: 15px;
+    vertical-align: top;
+}
+.sound.sound-info .main .sound-title .sound-status .status .td.like:before {
+    background: url(/v/dist-prod/images/ae488640107567b16640846a2375beb3.png) -22px 2px no-repeat;
+}
+.sound.sound-info .main .sound-title .sound-status .status .td {
+    display: inline-block;
+    color: #6b6b6b;
+    line-height: 16px;
+    font-size: 14px;
+    padding-left: 15px;
+    vertical-align: top;
+}
+.sound.sound-info .main .sound-title .sound-status .status .td.comment:before {
+    background: url(/v/dist-prod/images/ae488640107567b16640846a2375beb3.png) -44px 2px no-repeat;
+}
+.sound.sound-info .main .sound-bullets-wp {
+    position: relative;
+    height: 420px;
+}
+#dm-parent {
+    position: relative;
+    z-index: 30;
+}
+.sound.sound-info .main .sound-bullets-wp .bg-mask-wp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+.sound.sound-info .main .sound-bullets-wp .bg-mask-wp .pic {
+    position: absolute;
+    height: auto;
+    top: -260px;
+    left: -25px;
+    width: 1050px;
+    -webkit-filter: blur(18px);
+    -ms-filter: blur(18px);
+    filter: blur(18px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=18, MakeShadow=false);
+    max-width: 1050px;
+}
+.sound.sound-info .main .sound-bullets-wp .bg-mask-wp .bg-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.6);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.06);
+}
+.sound.sound-info .main .sound-bullets-wp .sound-cover {
+    position: absolute;
+    width: 292px;
+    height: 292px;
+    border-radius: 4px;
+    background: rgba(255,255,255,.85);
+    top: 40px;
+    left: 40px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.3);
+    z-index: 50;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-cover img {
+    width: 282px;
+    height: 282px;
+    border-radius: 4px;
+    margin: 5px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls {
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    background: rgba(255,255,255,.85);
+    left: 0;
+    bottom: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls #playbtn {
+    float: left;
+    position: relative;
+    width: 38px;
+    height: 38px;
+    margin: 5px 0 5px 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #6ed56c;
+    cursor: pointer;
+    font: 400 14px/1 taotao;
+    background: #fff;
+    background: url(../../static/img/play.png) 1px 6px no-repeat;
+}
+
+.sound.sound-info .main .sound-bullets-wp .sound-controls .duration, .sound.sound-info .main .sound-bullets-wp .sound-controls #total-time {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px;
+    color: #8c8c8c;
+    margin: 0 8px;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls .vmp-timeline {
+    float: left;
+    position: relative;
+    width: 620px;
+    height: 6px;
+    margin: 21px 8px;
+    border-radius: 3px;
+    background-color: #e1f2cf;
+    cursor: pointer;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls .vmp-timeline #vmp-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #9ad559;
+    height: 100%;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls #currentTime{
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px;
+    color: #8c8c8c;
+    margin: 0 8px;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls #durationTime{
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    font-size: 12px;
+    color: #8c8c8c;
+    margin: 0 8px;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls .play-type {
+    float: left;
+    width: 30px;
+    height: 25px;
+    background: url(/v/dist-prod/images/8d6cf0949ba9346522f195dbdf155581.png) no-repeat;
+    margin: 11px 8px;
+    cursor: default;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls .icon-love {
+    float: left;
+    width: 26px;
+    height: 26px;
+    background: url(../../static/img/f3095678a2fabadc6353310f2ab2359b.png) 50% 50% no-repeat;
+    margin: 11px 8px;
+    cursor: pointer;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls #lmusic {
+    width: 26px;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls .icon-love1 {
+    float: left;
+    width: 26px;
+    height: 26px;
+    background: url(../../static/img/c09d1b90d8073c1a808f5f824a55cb31.png) 50% 50% no-repeat;
+    margin: 11px 8px;
+    cursor: pointer;
+}
+.sound.sound-info .main .sound-bullets-wp .sound-controls .troggle-danmu {
+    float: left;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #999;
+    background: #fff;
+    margin: 9px 8px;
+    cursor: pointer;
+}
+.clearfix:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+}
+.sound.sound-info .main .user-ctrl-bar {
+    padding: 15px 30px;
+}
+.sound.sound-info .main .user-ctrl-bar .tags-area .tags-list {
+    float: left;
+    width: 70%;
+}
+.sound.sound-info .main .user-ctrl-bar .tags-area .tags-list .addnew {
+    display: inline-block;
+    position: relative;
+    font-style: normal;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 10px 5px 0;
+    padding: 0 12px;
+    border-radius: 14px;
+    color: #fff;
+    background: #6ed56c;
+    border: 1px solid #6ed56c;
+    cursor: pointer;
+}
+.sound.sound-info .main .user-ctrl-bar .tags-area .tags-list .addnew:before {
+    content: '+';
+    display: inline-block;
+    font: 400 20px/1 'Microsoft Yahei';
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.sound.sound-info .main .user-ctrl-bar .tags-area .adder-infos {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+.sound.sound-info .main .user-ctrl-bar .tags-area .adder-infos .adder-user-avatar {
+    float: right;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+.sound.sound-info .main .user-ctrl-bar .tags-area .adder-infos .adder-user-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.icon-famous:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    font: 400 16px/20px arial;
+}
+
+.icon-famous-album:after, .icon-famous:after {
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+.sound.sound-info .main .user-ctrl-bar .tags-area .adder-infos .adder-text {
+    float: right;
+    width: 200px;
+    margin-right: 15px;
+}
+.sound.sound-info .main .user-ctrl-bar .tags-area .adder-infos .adder-text .addername {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 14px;
+    color: #6b6b6b;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+}
+.sound.sound-info .main .user-ctrl-bar .tags-area .adder-infos .adder-text small {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: #8e8e8e;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 5px;
+}
+.sound.sound-info .main .user-ctrl-bar .user-comment {
+    margin: 22px 0 10px;
+}
+.sound.sound-info .main .user-ctrl-bar .user-comment input[type=text] {
+    display: inline-block;
+    vertical-align: top;
+    width: 700px;
+    line-height: 20px;
+    font-size: 14px;
+    padding: 9px 20px;
+    border: 1px solid #ebebeb;
+    background: #fbfbfb;
+    color: #999;
+    border-radius: 4px;
+}
+.sound.sound-info .main .user-ctrl-bar .user-comment .btn-submit, .sound.sound-info .main .user-ctrl-bar .user-comment .select-filter {
+    display: inline-block;
+    width: 92px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: none;
+    border-radius: 19px;
+    color: #fff;
+    background: #7ed321;
+    font-size: 14px;
+    float: right;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.sound.sound-info .main .user-ctrl-bar .user-comment .btn-submit, .sound.sound-info .main .user-ctrl-bar .user-comment .select-filter {
+    display: inline-block;
+    width: 92px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: none;
+    border-radius: 19px;
+    color: #fff;
+    background: #7ed321;
+    font-size: 14px;
+    float: right;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.sound.sound-info .main .user-ctrl-bar .user-comment .select-filter:before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url(/v/dist-prod/images/f6093fd387f691d6b352d65eb259688a.png) 50% 50% no-repeat;
+    margin: -2px 4px 0 0;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter-wp {
+    position: relative;
+    height: 210px;
+    overflow: hidden;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter {
+    position: relative;
+    border: 1px solid #ebebeb;
+    background: #fbfbfb;
+    border-radius: 4px;
+    margin: 0 auto;
+    top: 10px;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter .preview {
+    border-bottom: 1px solid #f4f4f4;
+    padding: 23px 0;
+    margin: 0 35px;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter .preview .prev-title {
+    float: left;
+    display: inline-block;
+    width: 76px;
+    height: 28px;
+    line-height: 28px;
+    background: #e8e8e8;
+    border-radius: 14px;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter .preview .prev-content {
+    float: left;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    line-height: 28px;
+    height: 28px;
+    border-radius: 14px;
+    font-size: 13px;
+    padding: 0 15px;
+    margin-left: 12px;
+    max-width: 740px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #5c5c5c;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter .preview .prev-content .author {
+    color: #6ed56c;
+    margin-right: 5px;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter .preview .prev-content .comment {
+    color: #5c5c5c;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter .options {
+    margin: 15px 19px;
+}
+.sound.sound-info .main .user-ctrl-bar .choose-filter .options .filter {
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin: 0 12px 10px;
+    width: 126px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #e8e8e8;
+    border-radius: 18px;
+    color: #999;
+    font-size: 12px;
+    text-indent: 39px;
+    background-repeat: no-repeat;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+.sound.sound-info .infos {
+    margin-top: 15px;
+}
+.sound.sound-info .infos .lyrics {
+    float: left;
+    background: #fff;
+    width: 420px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.sound.sound-info .infos h1 {
+    margin: 30px;
+    color: #6b6b6b;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+}
+.sound.sound-info .infos .lyrics p {
+    margin: 35px 60px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+.sound.sound-info .infos .comments {
+    float: right;
+    background: #fff;
+    width: 565px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.sound.sound-info .infos h1 {
+    margin: 30px;
+    color: #6b6b6b;
+    height: 24px;
+    font-size: 24px;
+    line-height: 24px;
+}
+.sound.sound-info .infos .comments .comment-area {
+    margin: 0 20px 30px 30px;
+}
+.sound.sound-info .infos .comments .comment-area .comment-list {
+    padding: 10px 0;
+    border-bottom: 1px solid #efefef;
+}
+.sound.sound-info .infos .comments .comment-area .comment-list .user-avatar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    float: left;
+}
+.sound.sound-info .infos .comments .comment-area .comment-list .comment-inner-wp {
+    float: right;
+    width: 450px;
+}
+.sound.sound-info .infos .comments .comment-area .comment-list .comment-inner-wp .user-info {
+    margin-top: 8px;
+}
+.sound.sound-info .infos .comments .comment-area .comment-list .user-comment-info {
+    color: #535353;
+    font-size: 14px;
+    line-height: 20px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.sound.sound-info .infos .comments .comment-area .comment-list .status {
+    color: #b7b7b7;
+    font-size: 12px;
+    text-align: right;
+}
+.sound.sound-info .infos .comments .comment-area .comment-list .status span {
+    cursor: pointer;
+    margin-left: 20px;
+}

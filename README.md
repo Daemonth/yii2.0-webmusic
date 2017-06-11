@@ -53,3 +53,4 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+# 一个基于yii框架的未完成的音乐网站

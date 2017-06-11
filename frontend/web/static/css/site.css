@@ -1,0 +1,187 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+    background: #ebebeb;
+}
+
+.wrap > .container {
+    padding: 0px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+.headerv3 {
+    padding: 0 20px;
+    position: relative;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,.04);
+    min-width: 1000px;
+}
+.navbar-left  a{
+    float: left;
+    display: inline-block;
+    padding: 0 12px;
+    height: 76px;
+    color: #999;
+    font-size: 14px;
+    line-height: 80px;
+    margin: 10px;
+}
+.navbar-left  a:hover{
+   border-bottom: 4px solid #6ed56c;
+   
+}
+.headerv3-search input{
+    margin: 10px 16px 0 0;
+    padding: 8px 28px 8px 32px;
+    width: 150px;
+    height: 32px;
+    border: 1px solid #e8e8e8;
+    border-radius: 50px;
+    background: url(/v/dist-prod/images/e7bc9b0172145494d645f3671c2a3aba.png) 10px 50% no-repeat #f7f7f7;
+    background-size: 12px 12px;
+    font: 400 12px/14px 'Microsoft Yahei';
+
+}
+.headerv3-upload-audio {
+    float: right;
+    margin: 8px 16px 0 0;
+    width: 90px;
+    height: 32px;
+    border-radius: 16px;
+    background: #6ed56c;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 32px;
+}
+.headerv3-login {
+    color: #6ed56c;
+    font-size: 16px;
+    line-height: 50px;
+    float: right;
+    margin: 0px 20px 0 10px;
+}
+.navbar-right img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.headerv3-logout {
+    float: right;
+    margin: 5px 0 0 20px;
+    width: 40px;
+    height: 40px;
+    background: url(../img/2.png) 50% 50% no-repeat;
+    cursor: pointer;
+}
