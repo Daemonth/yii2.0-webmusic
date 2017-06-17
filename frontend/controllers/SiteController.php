@@ -375,9 +375,9 @@ class SiteController extends Controller
     public function actionPaixu()
     {
         $id = Yii::$app->user->identity->id;
-        $lmusic = MusicModel::getMusicByLT($id);
+        $amusic = MusicModel::getMusicByLT($id);
         $smusic = MusicModel::getMusicBySdT($id);
-        $test = array_merge($lmusic, $smusic);
+        $test = array_merge($amusic, $smusic);
         $len = count($test);
         for ($k = 1; $k < $len; $k++) {
             for ($j = 0; $j < $len - $k; $j++) {
