@@ -1,4 +1,5 @@
 <?php
+
 namespace frontend\controllers;
 
 use Yii;
@@ -35,28 +36,28 @@ class SiteController extends Controller
     public function behaviors()
     {
         return [
-        'access' => [
-        'class' => AccessControl::className(),
-        'only' => ['logout', 'signup'],
-        'rules' => [
-        [
-        'actions' => ['signup'],
-        'allow' => true,
-        'roles' => ['?'],
-        ],
-        [
-        'actions' => ['logout'],
-        'allow' => true,
-        'roles' => ['@'],
-        ],
-        ],
-        ],
-        'verbs' => [
-        'class' => VerbFilter::className(),
-        'actions' => [
-        'logout' => ['post'],
-        ],
-        ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['logout', 'signup'],
+                'rules' => [
+                    [
+                        'actions' => ['signup'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['logout'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'logout' => ['post'],
+                ],
+            ],
         ];
     }
 
@@ -66,19 +67,16 @@ class SiteController extends Controller
     public function actions()
     {
         return [
-        'error' => [
-        'class' => 'yii\web\ErrorAction',
-        ],
-        'captcha' => [
-        'class' => 'yii\captcha\CaptchaAction',
-        'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-        ],
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+            'captcha' => [
+                'class' => 'yii\captcha\CaptchaAction',
+                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+            ],
 
         ];
     }
-
-
-    
 
 
     /**
@@ -87,25 +85,25 @@ class SiteController extends Controller
      * @return mixed
      */
     public function actionIndex()
-    {   
-        if (!Yii::$app->user->isGuest){
+    {
+        if (!Yii::$app->user->isGuest) {
 
-        $ul=Yii::$app->homeUrl;
+            $ul = Yii::$app->homeUrl;
 
-        $music=MusicModel::getMusicByT();
-        $hotmusic=MusicModel::getMusicByS();
-        $Mhotmusic=MusicModel::getMusicByM();
+            $music = MusicModel::getMusicByT();
+            $hotmusic = MusicModel::getMusicByS();
+            $Mhotmusic = MusicModel::getMusicByM();
 
-        return $this->render('index', [
+            return $this->render('index', [
                 'music' => $music,
-                'hotmusic'=>$hotmusic,
-                'Mhotmusic'=>$Mhotmusic,
-                'ul'=>$ul,
-                ]);
-        }else{
+                'hotmusic' => $hotmusic,
+                'Mhotmusic' => $Mhotmusic,
+                'ul' => $ul,
+            ]);
+        } else {
             return $this->render('login');
         }
-        
+
     }
 
     /**
@@ -124,10 +122,10 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         } else {
-            
+
             return $this->render('login', [
                 'model' => $model,
-                ]);
+            ]);
         }
     }
 
@@ -162,7 +160,7 @@ class SiteController extends Controller
         } else {
             return $this->render('contact', [
                 'model' => $model,
-                ]);
+            ]);
         }
     }
 
@@ -175,7 +173,7 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-    
+
     /**
      * Signs user up.
      *
@@ -195,7 +193,7 @@ class SiteController extends Controller
 
         return $this->render('signup', [
             'model' => $model,
-            ]);
+        ]);
     }
 
     /**
@@ -218,7 +216,7 @@ class SiteController extends Controller
 
         return $this->render('requestPasswordResetToken', [
             'model' => $model,
-            ]);
+        ]);
     }
 
     /**
@@ -244,7 +242,7 @@ class SiteController extends Controller
 
         return $this->render('resetPassword', [
             'model' => $model,
-            ]);
+        ]);
     }
 
 
@@ -254,6 +252,7 @@ class SiteController extends Controller
 
 
     // 展示频道
+
     /**
      * Resets password.
      *
@@ -262,136 +261,134 @@ class SiteController extends Controller
      * @throws BadRequestHttpException
      */
     public function actionChannel($id)
-    {   
+    {
 
-        
-    
-        $curPage = Yii::$app->request->get('page',1);  //获取当前页
+
+        $curPage = Yii::$app->request->get('page', 1);  //获取当前页
         $pageSize = 2;                 //设置每页显示条数
-        $pid=['pid'=>$id];
-        $count=ChannelModel::find()->where($pid)->count();
-        $pages = new Pagination(['totalCount' =>$count, 'pageSize' => $pageSize]);
-        
-        $data1=ChannelModel::findfpd($id);
+        $pid = ['pid' => $id];
+        $count = ChannelModel::find()->where($pid)->count();
+        $pages = new Pagination(['totalCount' => $count, 'pageSize' => $pageSize]);
+
+        $data1 = ChannelModel::findfpd($id);
         $channel = $data1->offset($pages->offset)->limit($pages->limit)->all();
-  
-       // $channel=ChannelModel::getchannels();
-        $hotchannel=ChannelModel::findHotC();
-        $zchannel=ChannelModel::findzpd();
+
+        // $channel=ChannelModel::getchannels();
+        $hotchannel = ChannelModel::findHotC();
+        $zchannel = ChannelModel::findzpd();
         //$music=MusicModel::getAllmusics();
         //$hotmusic=MusicModel::gethotm();
-        return $this->render('channel',['channel'=>$channel,'pages'=>$pages,'hotchannel'=>$hotchannel,'zchannel'=>$zchannel]);
+        return $this->render('channel', ['channel' => $channel, 'pages' => $pages, 'hotchannel' => $hotchannel, 'zchannel' => $zchannel]);
     }
 
-   //上传作品
-    public function actionUpload(){
+    //上传作品
+    public function actionUpload()
+    {
 
-        $model= new MusicForm();
-        
+        $model = new MusicForm();
+
         if (Yii::$app->request->isPost) {
             $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
             $model->soundFile = UploadedFile::getInstance($model, 'soundFile');
-            $model->img=$model->imageFile;
-            $model->sound=$model->soundFile;
-            $musicSrc="./sounds/$model->soundFile";
-            
-            
+            $model->img = $model->imageFile;
+            $model->sound = $model->soundFile;
+            $musicSrc = "./sounds/$model->soundFile";
+
+
             if ($model->upload()) {
                 //计算音频长度
-              $mp3 = new MP3File($musicSrc);
-              $a = $mp3->getDurationEstimate();
-              $b = $mp3->getDuration();
-              $duration = $mp3::formatTime($b);
-              $time=$duration['minutes'].':'.$duration['seconds'];
-              $model->duration=$time;
-                   
+                $mp3 = new MP3File($musicSrc);
+                $a = $mp3->getDurationEstimate();
+                $b = $mp3->getDuration();
+                $duration = $mp3::formatTime($b);
+                $time = $duration['minutes'] . ':' . $duration['seconds'];
+                $model->duration = $time;
+
                 if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-                 
+
                     if ($model->addmusic()) {
 
 
-                       return $this->render('upload', ['model' => $model]);
-                   }
-               }
-           }
-       }
+                        return $this->render('upload', ['model' => $model]);
+                    }
+                }
+            }
+        }
 
-       return $this->render('upload', ['model' => $model]);
+        return $this->render('upload', ['model' => $model]);
 
-   }
+    }
+
     /**
-    var_dump();
+     * var_dump();
      * 好友圈
      *
      * @return mixed
      */
     public function actionCommunity()
-    { 
+    {
 
-        $id=Yii::$app->user->identity->id;
-        $ul=Yii::$app->homeUrl;
-        $curPage = Yii::$app->request->get('page',1);  //获取当前页
-        $pageSize = 3; 
+        $id = Yii::$app->user->identity->id;
+        $ul = Yii::$app->homeUrl;
+        $curPage = Yii::$app->request->get('page', 1);  //获取当前页
+        $pageSize = 3;
         $useid = ['useid' => $id];
 
-        $count1=Trends::find()->joinwith('musicModel')->joinwith('auser')->where($useid)->count();
-        $count2=Trends::find()->asArray()->joinwith('musicModel')->join('LEFT JOIN', 'addtion', 'addtion.auseid= trends.useid')->where(['addtion.useid' => $useid])->orderBy('trends.time DESC')->count();
-        $count=$count1+$count2;
-        $pages = new Pagination(['totalCount' =>$count, 'pageSize' => $pageSize]);
+        $count1 = Trends::find()->joinwith('musicModel')->joinwith('auser')->where($useid)->count();
+        $count2 = Trends::find()->asArray()->joinwith('musicModel')->join('LEFT JOIN', 'addtion', 'addtion.auseid= trends.useid')->where(['addtion.useid' => $useid])->orderBy('trends.time DESC')->count();
+        $count = $count1 + $count2;
+        $pages = new Pagination(['totalCount' => $count, 'pageSize' => $pageSize]);
 
 
-
-        $data=Trends::find()->asArray()->joinwith('musicModel')->joinwith('auser')->where($useid)->orderBy('time DESC');
-        $trend1 = $data->offset($pages->offset)->limit($pages->limit)->all(); 
+        $data = Trends::find()->asArray()->joinwith('musicModel')->joinwith('auser')->where($useid)->orderBy('time DESC');
+        $trend1 = $data->offset($pages->offset)->limit($pages->limit)->all();
 
         //关注动态
-         $data1=Trends::find()->asArray()->joinwith('musicModel')->joinwith('user')->joinwith('addtion')->where(['addtion.useid' => $useid])->orderBy('trends.time DESC');
+        $data1 = Trends::find()->asArray()->joinwith('musicModel')->joinwith('user')->joinwith('addtion')->where(['addtion.useid' => $useid])->orderBy('trends.time DESC');
 
-         $trend2 = $data1->offset($pages->offset)->limit($pages->limit)->all(); 
+        $trend2 = $data1->offset($pages->offset)->limit($pages->limit)->all();
 
-         $trend=array_merge($trend1, $trend2);
-         $len=count($trend);
-          for($k=1;$k<$len;$k++)
-         {
-             for($j=0;$j<$len-$k;$j++){
-               if($trend[$j]['time']<$trend[$j+1]['time']){
-                $temp =$trend[$j+1];
-                $trend[$j+1] =$trend[$j] ;
-                $trend[$j] = $temp;
-               }
-             }
-         }
+        $trend = array_merge($trend1, $trend2);
+        $len = count($trend);
+        for ($k = 1; $k < $len; $k++) {
+            for ($j = 0; $j < $len - $k; $j++) {
+                if ($trend[$j]['time'] < $trend[$j + 1]['time']) {
+                    $temp = $trend[$j + 1];
+                    $trend[$j + 1] = $trend[$j];
+                    $trend[$j] = $temp;
+                }
+            }
+        }
 
 
-       $count3=Addtion::getByAdd($id);
-       $count4=Addtion::getByAID($id);
-       $count5=Trends::getCUseid($id);
-        return $this->render('community', ['trend' => $trend,'ul'=>$ul,'id'=>$id,'pages'=>$pages,'count3'=>$count3,'count4'=>$count4,'count5'=>$count5]);
+        $count3 = Addtion::getByAdd($id);
+        $count4 = Addtion::getByAID($id);
+        $count5 = Trends::getCUseid($id);
+        return $this->render('community', ['trend' => $trend, 'ul' => $ul, 'id' => $id, 'pages' => $pages, 'count3' => $count3, 'count4' => $count4, 'count5' => $count5]);
     }
 
-   /**
+    /**
      * 冒泡排序
      *
      * @return mixed
      */
     public function actionPaixu()
-    {   
-        $id=Yii::$app->user->identity->id;
-        $lmusic =MusicModel::getMusicByLT($id);
-        $smusic=MusicModel::getMusicBySdT($id);
-        $test=array_merge($lmusic, $smusic);
-        $len=count($test);
-        for($k=1;$k<$len;$k++)
-         {
-             for($j=0;$j<$len-$k;$j++){
-               if($test[$j]['time']<$test[$j+1]['time']){
-                $temp =$test[$j+1];
-                $test[$j+1] =$test[$j] ;
-                $test[$j] = $temp;
-               }
-             }
-         }
-        
+    {
+        $id = Yii::$app->user->identity->id;
+        $lmusic = MusicModel::getMusicByLT($id);
+        $smusic = MusicModel::getMusicBySdT($id);
+        $test = array_merge($lmusic, $smusic);
+        $len = count($test);
+        for ($k = 1; $k < $len; $k++) {
+            for ($j = 0; $j < $len - $k; $j++) {
+                if ($test[$j]['time'] < $test[$j + 1]['time']) {
+                    $temp = $test[$j + 1];
+                    $test[$j + 1] = $test[$j];
+                    $test[$j] = $temp;
+                }
+            }
+        }
+
         return $this->render('community', ['test' => $test]);
     }
 
