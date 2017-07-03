@@ -2,9 +2,10 @@
 
 namespace frontend\controllers;
 
+use yii\helpers\ArrayHelper;
 use Yii;
 use yii\base\InvalidParamException;
-use yii\web\BadRequestHttpException;
+
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -30,6 +31,8 @@ use common\models\Addtion;
  */
 class SiteController extends Controller
 {
+    public $enableCsrfValidation = false;
+
     /**
      * @inheritdoc
      */
@@ -86,23 +89,21 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        if (!Yii::$app->user->isGuest) {
 
-            $ul = Yii::$app->homeUrl;
 
-            $music = MusicModel::getMusicByT();
-            $hotmusic = MusicModel::getMusicByS();
-            $Mhotmusic = MusicModel::getMusicByM();
+        $ul = Yii::$app->homeUrl;
 
-            return $this->render('index', [
-                'music' => $music,
-                'hotmusic' => $hotmusic,
-                'Mhotmusic' => $Mhotmusic,
-                'ul' => $ul,
-            ]);
-        } else {
-            return $this->render('login');
-        }
+        $music = MusicModel::getMusicByT();
+        $hotmusic = MusicModel::getMusicByS();
+        $Mhotmusic = MusicModel::getMusicByM();
+
+        return $this->render('index', [
+            'music' => $music,
+            'hotmusic' => $hotmusic,
+            'Mhotmusic' => $Mhotmusic,
+            'ul' => $ul,
+        ]);
+
 
     }
 
@@ -137,8 +138,18 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
+        $ul = Yii::$app->homeUrl;
 
-        return $this->goHome();
+        $music = MusicModel::getMusicByT();
+        $hotmusic = MusicModel::getMusicByS();
+        $Mhotmusic = MusicModel::getMusicByM();
+
+        return $this->render('index', [
+            'music' => $music,
+            'hotmusic' => $hotmusic,
+            'Mhotmusic' => $Mhotmusic,
+            'ul' => $ul,
+        ]);
     }
 
     /**
@@ -286,8 +297,10 @@ class SiteController extends Controller
     {
 
         $model = new MusicForm();
-
+        $channel1 = ChannelModel::findCpd();
+        $channel = ArrayHelper::map($channel1, 'id', 'channelname');
         if (Yii::$app->request->isPost) {
+
             $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
             $model->soundFile = UploadedFile::getInstance($model, 'soundFile');
             $model->img = $model->imageFile;
@@ -306,65 +319,73 @@ class SiteController extends Controller
 
                 if ($model->load(Yii::$app->request->post()) && $model->validate()) {
 
+
                     if ($model->addmusic()) {
 
 
-                        return $this->render('upload', ['model' => $model]);
+                        return $this->render('upload', ['model' => $model, 'channel' => $channel]);
                     }
                 }
             }
         }
 
-        return $this->render('upload', ['model' => $model]);
+        return $this->render('upload', ['model' => $model, 'channel' => $channel]);
 
     }
 
     /**
-     * var_dump();
      * 好友圈
      *
      * @return mixed
      */
     public function actionCommunity()
     {
-
-        $id = Yii::$app->user->identity->id;
-        $ul = Yii::$app->homeUrl;
-        $curPage = Yii::$app->request->get('page', 1);  //获取当前页
-        $pageSize = 3;
-        $useid = ['useid' => $id];
-
-        $count1 = Trends::find()->joinwith('musicModel')->joinwith('auser')->where($useid)->count();
-        $count2 = Trends::find()->asArray()->joinwith('musicModel')->join('LEFT JOIN', 'addtion', 'addtion.auseid= trends.useid')->where(['addtion.useid' => $useid])->orderBy('trends.time DESC')->count();
-        $count = $count1 + $count2;
-        $pages = new Pagination(['totalCount' => $count, 'pageSize' => $pageSize]);
+        if (Yii::$app->user->isGuest) {
+            $model = new LoginForm();
+            return $this->render('login', [
+                'model' => $model,
+            ]);
+        } else {
 
 
-        $data = Trends::find()->asArray()->joinwith('musicModel')->joinwith('auser')->where($useid)->orderBy('time DESC');
-        $trend1 = $data->offset($pages->offset)->limit($pages->limit)->all();
+            $id = Yii::$app->user->identity->id;
+            $ul = Yii::$app->homeUrl;
+            $curPage = Yii::$app->request->get('page', 1);  //获取当前页
+            $pageSize = 3;
+            $useid = ['useid' => $id];
 
-        //关注动态
-        $data1 = Trends::find()->asArray()->joinwith('musicModel')->joinwith('user')->joinwith('addtion')->where(['addtion.useid' => $useid])->orderBy('trends.time DESC');
+            $count1 = Trends::find()->joinwith('musicModel')->joinwith('auser')->where($useid)->count();
+            $count2 = Trends::find()->asArray()->joinwith('musicModel')->join('LEFT JOIN', 'addtion', 'addtion.auseid= trends.useid')->where(['addtion.useid' => $useid])->orderBy('trends.time DESC')->count();
+            $count = $count1 + $count2;
+            $pages = new Pagination(['totalCount' => $count, 'pageSize' => $pageSize]);
 
-        $trend2 = $data1->offset($pages->offset)->limit($pages->limit)->all();
 
-        $trend = array_merge($trend1, $trend2);
-        $len = count($trend);
-        for ($k = 1; $k < $len; $k++) {
-            for ($j = 0; $j < $len - $k; $j++) {
-                if ($trend[$j]['time'] < $trend[$j + 1]['time']) {
-                    $temp = $trend[$j + 1];
-                    $trend[$j + 1] = $trend[$j];
-                    $trend[$j] = $temp;
+            $data = Trends::find()->asArray()->joinwith('musicModel')->joinwith('auser')->where($useid)->orderBy('time DESC');
+            $trend1 = $data->offset($pages->offset)->limit($pages->limit)->all();
+
+            //关注动态
+            $data1 = Trends::find()->asArray()->joinwith('musicModel')->joinwith('user')->joinwith('addtion')->where(['addtion.useid' => $useid])->orderBy('trends.time DESC');
+
+            $trend2 = $data1->offset($pages->offset)->limit($pages->limit)->all();
+
+            $trend = array_merge($trend1, $trend2);
+            $len = count($trend);
+            for ($k = 1; $k < $len; $k++) {
+                for ($j = 0; $j < $len - $k; $j++) {
+                    if ($trend[$j]['time'] < $trend[$j + 1]['time']) {
+                        $temp = $trend[$j + 1];
+                        $trend[$j + 1] = $trend[$j];
+                        $trend[$j] = $temp;
+                    }
                 }
             }
+
+
+            $count3 = Addtion::getByAdd($id);
+            $count4 = Addtion::getByAID($id);
+            $count5 = Trends::getCUseid($id);
+            return $this->render('community', ['trend' => $trend, 'ul' => $ul, 'id' => $id, 'pages' => $pages, 'count3' => $count3, 'count4' => $count4, 'count5' => $count5]);
         }
-
-
-        $count3 = Addtion::getByAdd($id);
-        $count4 = Addtion::getByAID($id);
-        $count5 = Trends::getCUseid($id);
-        return $this->render('community', ['trend' => $trend, 'ul' => $ul, 'id' => $id, 'pages' => $pages, 'count3' => $count3, 'count4' => $count4, 'count5' => $count5]);
     }
 
     /**
@@ -375,9 +396,9 @@ class SiteController extends Controller
     public function actionPaixu()
     {
         $id = Yii::$app->user->identity->id;
-        $amusic = MusicModel::getMusicByLT($id);
+        $lmusic = MusicModel::getMusicByLT($id);
         $smusic = MusicModel::getMusicBySdT($id);
-        $test = array_merge($amusic, $smusic);
+        $test = array_merge($lmusic, $smusic);
         $len = count($test);
         for ($k = 1; $k < $len; $k++) {
             for ($j = 0; $j < $len - $k; $j++) {

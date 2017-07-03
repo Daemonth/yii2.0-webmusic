@@ -214,7 +214,7 @@ class MusicModel extends \yii\db\ActiveRecord
     }
    
     //获取频道
-    public function getChannelModel()
+    public  function getChannelModel()
     {
         return $this->hasMany(ChannelModel::className(), ['id' => 'channelid']);
     }

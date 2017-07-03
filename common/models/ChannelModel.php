@@ -101,6 +101,17 @@ class ChannelModel extends \yii\db\ActiveRecord
         return $channels;
     }
      /**
+     * 主频道
+     *
+     */
+    public static function findCpd()
+    {   
+        
+        $res=self::find()->asArray()->where(['<>','pid',0])->all();
+        $channels=$res;
+        return $channels;
+    }
+     /**
      * 分频道
      *
      */

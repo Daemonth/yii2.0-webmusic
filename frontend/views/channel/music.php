@@ -66,7 +66,7 @@ $this->params['breadcrumbs'][] = $this->title;
 								<img src="<?php echo $ul?>static/img/<?php echo $musics['img'];?>">
 							</a>
 							<div class="duration">
-								<i id="playbtn"></i>04:24
+								<i id="playbtn"></i><?php echo $musics['duration'];?>
 							</div>
 						</div> 
 						<a href="<?= Url::to(['mplay', 'id'=>$musics[ 'id']]); ?>" id="song-name"><?php echo $musics['musicname'];?></a> 

@@ -78,12 +78,12 @@ class MusicForm extends Model
         }
         
         $music = new MusicModel();
-        $music->img=$this->img;
+        $music->img= time() . '.' . $this->imageFile->extension;
         $music->musicname =$this->musicname;
-        $music->channelid = '1';
+        $music->channelid = $this->channelid;
         $music->musictitle=$this->musictitle;
         $music->musicer=$this->musicer;
-        $music->sound=$this->sound;
+        $music->sound= $this->sound;
         $music->zj=$this->zj;
         $music->zq=$this->zq;
         $music->gc=$this->gc;
@@ -93,7 +93,7 @@ class MusicForm extends Model
         $music->sender=Yii::$app->user->identity->id;
 
         $trends=new Trends();
-        $trends->img=$this->img;
+    
         $trends->lmusicid=0;
         $trends->musicid=$this->musictitle;
         $trends->useid=Yii::$app->user->identity->id;
@@ -105,7 +105,7 @@ class MusicForm extends Model
 
  public function upload()
     {
-             $this->imageFile->saveAs('uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension);
+             $this->imageFile->saveAs('uploads/' . time() . '.' . $this->imageFile->extension);
              $this->soundFile->saveAs('sounds/' . $this->soundFile->baseName . '.' . $this->soundFile->extension);
              return true; 
     }

@@ -9,7 +9,7 @@
     width: 460px;
     height: 100%;
     border-right: 1px dashed #e8e8e8;
-    background-color: #fff;
+     background: url(../../static/img/c31565a629ad4764aba1dfc9b7988f58.png) no-repeat;
 }
 .login-right {
     float: left;

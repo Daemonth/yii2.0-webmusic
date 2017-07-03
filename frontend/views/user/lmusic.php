@@ -29,11 +29,11 @@ $this->registerCss($cssString);
 			<div class="intro-w clearfix">
 				<div class="intro clearfix">
 					<a href="#/user/9154317">
-						<img src="https://qn-qn-hr-cer-cdn.app-echo.com/e273e88f9e7ef562862eed950fdf91a90e76be5c?imageMogr2/auto-orient/quality/100%7CimageMogr2/thumbnail/!100x100r/gravity/Center/crop/100x100/dx/0/dy/0">
+						<img src="<?php echo $ul?>uploads/<?php echo Yii::$app->user->identity->useimg;?>">
 					</a> 
 					<div class="avatar">
 						<a href="#/user/9154317">
-							<p>北城以南²</p>
+							<p><?php echo Yii::$app->user->identity->username;?></p>
 						</a> 
 						<span class="icon-famous-albums icon-famous-albums0"><!----></span>
 					</div>

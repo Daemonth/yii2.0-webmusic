@@ -1,5 +1,6 @@
 <?php
 use yii\widgets\ActiveForm;
+
 $cssString = ".form-control{
     width: 390px;
     height: 38px;
@@ -78,8 +79,7 @@ $this->registerCss($cssString);
 				<div class="tr clearfix">
 					<div class="td-left">回声频道</div> 
 					<div class="td-right">
-						<input type="text" readonly="readonly" placeholder="请选择回声所在的频道" class="input" name="MusicForm[channelid]"> 
-						<button class="choose-channel-btn">选择</button>
+						<?= $form->field($model, 'channelid' )->dropDownList($channel, ['prompt' => '请选择频道'])?>
 					</div>
 				</div> 
 				

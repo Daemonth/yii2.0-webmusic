@@ -46,9 +46,9 @@ class Comment extends \yii\db\ActiveRecord
         ];
     }
     //根据ID获取评论
-     public static function getByid($musicid)
+     public static function getByid($id)
     { 
-        $id = ['id' => $musicid];
+        $musicid = ['musicid' => $id];
         $res=self::find()->asArray()->where($musicid)->all();
         $comments=$res;
         return $comments;

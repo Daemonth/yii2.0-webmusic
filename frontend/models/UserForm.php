@@ -66,7 +66,7 @@ class UserForm extends Model
     public function upload()
     {          
              
-             $this->imageFile->saveAs('uploads/' . time(). '.' . $this->imageFile->extension);
+             $this->imageFile->saveAs('uploads/' .time(). '.' . $this->imageFile->extension);
              return true; 
     }
     

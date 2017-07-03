@@ -37,14 +37,14 @@ $this->params['breadcrumbs'][] = $this->title;
             }'>
 
 
-            <ul class = "poster-list">
-                <li class = "poster-item"><img src="../static/img/1.jpg" width = "100%" height="100%"></li>
-                <li class = "poster-item"><img src="../static/img/4.jpg" width = "100%" height="100%"></li>
-                <li class = "poster-item"><img src="../static/img/4.jpg" width = "100%" height="100%"></li>
-                <li class = "poster-item"><img src="../static/img/1.jpg" width = "100%" height="100%"></li>
-                <li class = "poster-item"><img src="../static/img/4.jpg" width = "100%" height="100%"></li>
-                <li class = "poster-item"><img src="../static/img/1.jpg"  width = "100%" height="100%"></li>
-                <li class = "poster-item"><img src="../static/img/4.jpg"  width = "100%" height="100%"></li>
+                <ul class = "poster-list">
+                <li class = "poster-item"><img src="<?php echo $ul?>static/img/1.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="<?php echo $ul?>static/img/4.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="<?php echo $ul?>static/img/4.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="<?php echo $ul?>static/img/1.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="<?php echo $ul?>static/img/4.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="<?php echo $ul?>static/img/1.jpg"  width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="<?php echo $ul?>static/img/4.jpg"  width = "100%" height="100%"></li>
             </ul>
 
 
